@@ -79,12 +79,11 @@ body {
     .overview__slidebar::before {
       content: '';
       display: block;
-      width: 80%;
       height: 100%;
       border: 4px solid #0c122c;
       border-radius: 100px;
       background-image: linear-gradient(90deg, #ffa399, #ff4d97);
-      animation: slidebar 1s 1 ease-in-out; }
+      animation: slidebar 1s 1 cubic-bezier(0, 0.5, 0.8, 1.3) forwards; }
     .overview__slidebar::after {
       content: '';
       display: block;
@@ -95,9 +94,8 @@ body {
       z-index: 100;
       position: absolute;
       top: 50%;
-      left: calc(80% - 18px);
       transform: translateY(-50%);
-      animation: dot 1s ease-in-out; }
+      animation: dot 1s cubic-bezier(0, 0.51, 0.8, 1.3) forwards; }
   .overview__space {
     display: flex;
     justify-content: space-between; }
@@ -114,7 +112,7 @@ body {
     justify-content: space-between;
     gap: 1rem;
     width: 210px;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 2.5rem;
     border-radius: 10px;
     background-color: white; }
     @media (min-width: 75em) {
