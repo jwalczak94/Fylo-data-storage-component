@@ -1,0 +1,17 @@
+{
+  "name": "challenge15",
+  "version": "1.0.0",
+  "description": "![Design preview for the Fylo data storage component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w sass/ -o css/ --recursive",
+    "prefix": "postcss --use autoprefixer -b 'last 10 versions' css/main.css -o css/main.prefix.css",
+    "build": "node-sass css/main.prefix.css  css/main-build.css --output-style compressed"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "node-sass": "^7.0.3"
+  }
+}
