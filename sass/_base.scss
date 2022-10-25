@@ -1,0 +1,60 @@
+//color variables
+$color-blue-light: hsl(243, 100%, 93%);
+$color-grey: hsl(229, 7%, 55%);
+$color-blue: hsl(228, 56%, 26%);
+$color-blue-dark: hsl(229, 57%, 11%);
+
+// RESPONSIVE BREAKPOINTS
+$bp-desktop: 75em; //1024px
+$bp-mobile: 37.5em; //600px
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    background-color: $color-blue-dark;
+    background-image: url(../images/bg-mobile.png);
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: $bp-desktop) {
+        background-image: url(../images/bg-desktop.png);
+        background-size: contain;
+        background-position: top 120% left;
+
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    margin: 10rem 1rem;
+
+    @media (min-width: $bp-desktop) {
+        flex-direction: row;
+        gap: 3rem;
+        align-items: flex-end;
+    }
+}
