@@ -1,6 +1,6 @@
 @keyframes slidebar {
     0% {
-        width: 1%;
+        width: 0;
     }
 
     100% {
@@ -14,6 +14,6 @@
     }
 
     100% {
-        left: calc(80% - 12px)
+        left: calc(80% - 18px);
     }
 }
