@@ -153,7 +153,7 @@ body {
 
 @keyframes slidebar {
   0% {
-    width: 1%; }
+    width: 0; }
   100% {
     width: 80%; } }
 
@@ -161,4 +161,4 @@ body {
   0% {
     left: 0; }
   100% {
-    left: calc(80% - 12px); } }
+    left: calc(80% - 18px); } }
